@@ -4,7 +4,7 @@ import React from "react";
 interface Props {
   score: number;
 }
-const CriticStore = ({ score }: Props) => {
+const CriticScore = ({ score }: Props) => {
   let color = score > 75 ? "green" : score > 60 ? "yellow" : "";
   return (
     <Badge
@@ -18,4 +18,4 @@ const CriticStore = ({ score }: Props) => {
   );
 };
 
-export default CriticStore;
+export default CriticScore;
